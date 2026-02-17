@@ -16,7 +16,7 @@ footer_text: >
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords: # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: /assets/img/br.ico # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://beyondreaction.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -204,6 +204,12 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+  - node_modules
+  - backup_template_files
+  - "assets/jupyter"
+  - "_bibliography"   # hide bibliography dir (if you removed it)
+  - "_posts/2023-07-12-post-bibliography.md"
+  
 keep_files:
   - CNAME
   - .nojekyll
@@ -351,14 +357,6 @@ enable_publication_thumbnails: true
 # --------------- local dev overrides ---------------
 # Disable ImageMagick processing (prevents the "Invalid Parameter - /Github" errors)
 enable_imagemagick: false
-imagemagick: false
-generate_webp: false
-
-# Exclude the jupyter notebooks folder from the build (prevents the jupyter plugin from running)
-exclude:
-  - "assets/jupyter"
-  - "_bibliography"   # hide bibliography dir (if you removed it)
-  - "_posts/2023-07-12-post-bibliography.md"
 
 # If the site uses jekyll-jupyter-notebook or jekyll-scholar gems,
 # we will remove them from the Gemfile (see next step).
@@ -366,9 +364,6 @@ exclude:
 
 # Disable al-folio image processing
 image_processing:
-  enabled: false
-
-imagemagick:
   enabled: false
 
 generate_webp: false
@@ -676,15 +671,3 @@ third_party_libraries:
       css: "https://cdn.jsdelivr.net/npm/venobox@{{version}}/dist/venobox.min.css"
       js: "https://cdn.jsdelivr.net/npm/venobox@{{version}}/dist/venobox.min.js"
     version: "2.1.8"
-
-# -----------------------------------------------------------------------------
-# Remove unnecessary files from the build
-# -----------------------------------------------------------------------------
-
-exclude:
-  - backup_template_files
-  - node_modules
-  - vendor
-  - README.md
-  - Gemfile
-  - Gemfile.lock
