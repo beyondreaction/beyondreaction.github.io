@@ -2,25 +2,25 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
+title: Beyond Reaction Workshop @ IH26 # the website title (if blank, full name will be used instead)
+first_name: 
+middle_name: 
+last_name: 
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  To get in touch, please email us at <a href="mailto:shyamas@iiitd.ac.in" target="_blank">shyamas@iiitd.ac.in</a>
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Healthcare Beyond Reaction: Harnessing AI and Sensing for Proactive Care — one-day hybrid workshop at the ACM SIGCHI Interactive Health 2026 Conference.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+keywords: # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://alshedivat.github.io # the base hostname & protocol for your site
-baseurl: /al-folio # the subpath of your site, e.g. /blog/. Leave blank for root
-last_updated: false # set to true if you want to display last updated in the footer
+url: https://beyondreaction.github.io # the base hostname & protocol for your site
+baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
+last_updated: true # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
 
@@ -28,8 +28,7 @@ back_to_top: true # set to false to disable the back to top button
 # Theme
 # -----------------------------------------------------------------------------
 
-# repo color theme
-repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
+repo_theme_light: deafault # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_trophies:
   enabled: true
@@ -59,6 +58,7 @@ search_enabled: true
 socials_in_search: true
 posts_in_search: true
 bib_search: true
+search: true
 
 # Dimensions
 max_width: 930px
@@ -121,24 +121,24 @@ giscus:
   lang: en
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # put your disqus shortname
+# disqus_shortname: al-folio # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 # Optional: Set default categories and tags for posts from each source.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-    categories: [external-posts]
-    tags: [medium]
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
-    categories: [external-posts]
-    tags: [google]
+# external_sources:
+#   - name: medium.com
+#     rss_url: https://medium.com/@al-folio/feed
+#     categories: [external-posts]
+#     tags: [medium]
+#   - name: Google Blog
+#     posts:
+#       - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
+#         published_date: 2024-05-14
+#     categories: [external-posts]
+#     tags: [google]
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -215,18 +215,17 @@ plugins:
   - jekyll-cache-bust
   - jekyll-email-protect
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-scholar
   - jekyll-get-json
-  - jekyll-imagemagick
-  - jekyll-jupyter-notebook
   - jekyll-link-attributes
   - jekyll-minifier
   - jekyll-paginate-v2
   - jekyll-regex-replace
-  - jekyll/scholar
   - jekyll-sitemap
-  - jekyll-socials
   - jekyll-tabs
-  - jekyll-terser
+  # - jekyll-terser
   - jekyll-toc
   - jekyll-twitter-plugin
   - jemoji
@@ -349,6 +348,35 @@ more_authors_animation_delay: 10 # more authors are revealed on click using anim
 # Enables publication thumbnails. If disabled, none of the publications will display thumbnails, even if specified in the bib entry.
 enable_publication_thumbnails: true
 
+# --------------- local dev overrides ---------------
+# Disable ImageMagick processing (prevents the "Invalid Parameter - /Github" errors)
+enable_imagemagick: false
+imagemagick: false
+generate_webp: false
+
+# Exclude the jupyter notebooks folder from the build (prevents the jupyter plugin from running)
+exclude:
+  - "assets/jupyter"
+  - "_bibliography"   # hide bibliography dir (if you removed it)
+  - "_posts/2023-07-12-post-bibliography.md"
+
+# If the site uses jekyll-jupyter-notebook or jekyll-scholar gems,
+# we will remove them from the Gemfile (see next step).
+# --------------- end overrides --------------------
+
+# Disable al-folio image processing
+image_processing:
+  enabled: false
+
+imagemagick:
+  enabled: false
+
+generate_webp: false
+
+# Disable advanced al-folio features
+enable_project_thumbnails: false
+
+
 # -----------------------------------------------------------------------------
 # Jekyll Link Attributes
 # -----------------------------------------------------------------------------
@@ -367,7 +395,7 @@ external_links:
 # MAKE SURE imagemagick is installed and on your PATH before enabling imagemagick. In a terminal, run:
 #   convert -version
 imagemagick:
-  enabled: true # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
+  enabled: false # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
   widths:
     - 480
     - 800
@@ -650,23 +678,13 @@ third_party_libraries:
     version: "2.1.8"
 
 # -----------------------------------------------------------------------------
-# Get external JSON data
+# Remove unnecessary files from the build
 # -----------------------------------------------------------------------------
 
-jekyll_get_json:
-  - data: resume
-    json: assets/json/resume.json # it can also be an url
-
-jsonresume:
-  - basics
-  - work
-  - education
-  - publications
-  - projects
-  - volunteer
-  - awards
-  - certificates
-  - skills
-  - languages
-  - interests
-  - references
+exclude:
+  - backup_template_files
+  - node_modules
+  - vendor
+  - README.md
+  - Gemfile
+  - Gemfile.lock
