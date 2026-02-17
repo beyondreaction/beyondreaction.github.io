@@ -259,3 +259,27 @@ ul.task-list input[type="checkbox"] {
 .d2h-diff-table {
   position: relative;
 }
+
+.news-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+  border-left: 2px solid #eee;
+  padding-left: 0.75rem;
+  scrollbar-width: thin;
+
+  max-height: 5.5rem; // adjust to fit ~3 rows
+  overflow-y: auto;
+}
+
+.news-list li {
+  display: grid;
+  grid-template-columns: 140px auto;
+  margin-bottom: 6px;
+  align-items: baseline;
+}
+
+.news-date {
+  color: #666;
+  font-size: 0.9rem;
+}

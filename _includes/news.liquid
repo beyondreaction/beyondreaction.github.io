@@ -1,0 +1,13 @@
+<ul class="news-list">
+  {% assign sorted_news = site.data.news | sort: 'date' | reverse %}
+  {% for item in sorted_news %}
+    <li>
+      <span class="news-date">
+        {{ item.date | date: '%b %d, %Y' }}
+      </span>
+      <span class="news-content">
+        {{ item.content }}
+      </span>
+    </li>
+  {% endfor %}
+</ul>
