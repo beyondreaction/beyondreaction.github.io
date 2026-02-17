@@ -1,0 +1,58 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+name: Build and deploy Jekyll site to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]        # change if your default branch is different
+  workflow_dispatch:          # allows manual run from Actions tab
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.2        # pick a modern stable Ruby (see note below)
+          bundler-cache: true      # caches gems between runs
+
+      - name: Install gems
+        run: |
+          gem --version
+          bundler --version
+          bundle install --jobs 4 --retry 3
+
+      - name: Build site with Jekyll
+        run: bundle exec jekyll build --trace
+
+      - name: List generated files (debug)
+        run: ls -la _site || true
+
+      - name: Configure Pages (required)
+        uses: actions/config-pages@v1
+
+      - name: Upload artifact for Pages
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./_site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v1
