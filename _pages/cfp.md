@@ -38,4 +38,4 @@ Accepted submissions will be published on the workshop website and archived on *
 
 ### How to submit
 
-Submit via the submission [link](https://forms.gle/BCXEYXw4XpWe2xUq8). Questions: <mailto:shyamas@iiitd.ac.in>.
+Submit via the submission [link](https://forms.gle/BCXEYXw4XpWe2xUq8). Submission Deadline: **3/27/26 AoE**. Questions: <mailto:hcbeyondreaction@gmail.com>.

@@ -8,7 +8,7 @@ nav_order: 5
 
 # Organizers
 
-We lead a diverse organizing team spanning HCI, health informatics, design, AI, and policy. Contact: <mailto:shyamas@iiitd.ac.in>.
+We lead a diverse organizing team spanning HCI, health informatics, design, AI, and policy. Contact: <mailto:hcbeyondreaction@gmail.com>.
 
 - Sastha Srinivasan — PhD candidate, Department of CSE, IIIT-Delhi. Work on HCAI frameworks for collective care.
 - Aisling Ann O'Kane — Associate Professor of HCI for Health, University of Bristol; specializes in participatory approaches to health technology design.
