@@ -39,9 +39,9 @@ As AI and sensing technologies increasingly shape everyday health tools, they of
 <!-- * [x] **~~6/26/25~~ 7/3/25 AoE**: Submission Deadline -->
 
 - [x] **2/18/26 AoE**: [Call for Participation](/cfp/) Released
-- [ ] **3/27/26 AoE**: Submission Deadline
-- [ ] **4/17/26 AoE**: Decision Notification
-- [ ] **4/27/26 AoE**: Deadline for Camera-Ready Versions to be Included in Website and Zenodo
+- [ ] **4/17/26 AoE**: Submission Deadline
+- [ ] **5/6/26 AoE**: Decision Notification
+- [ ] **5/14/26 AoE**: Deadline for Camera-Ready Versions to be Included in Website and Zenodo
 - [ ] **7/5/26 WEST (UTC+1)**: Day of the Workshop
 
 ### News
