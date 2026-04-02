@@ -14,12 +14,12 @@ This workshop is intended for graduate students, academic researchers, designers
 
 ### Capacity & registration
 
-- While we are expecting a maximum capacity of 50, both accepted poster presentators and others are welcome to register for the workshop. Preference will be given to accepted poster presenters if interests exceeds capacity.
-- All participants must be registered through the IH'26 conference registration — the workshop is an affiliated IH'26 event. Accepted poster authors must ensure at least one author attends in person to present.
+- While we are expecting a maximum in-person capacity of 50, both accepted authors and others are welcome to register for the workshop. Preference will be given to accepted authors if interests exceeds capacity.
+- All participants must be registered through the IH'26 conference [registration](https://ih.acm.org/registration) — the workshop is an affiliated IH'26 event. Accepted authors must ensure at least one author registers and attends.
 
 ### Online participation
 
-- The workshop is hybrid; online participants (only available for those who are not presenting an accepted poster) will join via Zoom. Online participation will be moderated by organizers to enable synchronous discussion and Q&A. Accepted posters will have an online equivalent display on the website so remote attendees can engage with the poster presenters during the poster sessions.
+- The workshop is hybrid; online participants will join via Zoom. Online participation will be moderated by organizers to enable synchronous discussion and Q&A.
 
 ### Before the workshop
 

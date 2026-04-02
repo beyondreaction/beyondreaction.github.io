@@ -23,25 +23,21 @@ As AI and sensing technologies increasingly shape everyday health tools, they of
 ### Logistics (high level)
 
 - Format: **One-day hybrid workshop** at [IH'26](https://ih.acm.org/) (in-person + Zoom for online participants).
-- Participation: poster submissions (≤4 pages, single-column ACM template, excluding references); at least one author of each accepted submission must attend in person to present.
-- **Poster Submissions are not Manditory for attending the workshop. However, the number of in-person registrations allowed will be limited to 50 participants and priority will be given to accepted poster submissions.**
+- Participation: poster submissions (≤4 pages, single-column ACM template, excluding references); at least one author of each accepted submission must [register](https://ih.acm.org/registration) and attend the workshop.
+- **Poster Submissions are not Manditory for attending the workshop. However, registration is required for attending the workshop.**
 
 > Join our workshop @ [IH 2026](https://ih.acm.org/) in Porto, Portugal! <br>
 > When: July 5, 2026 <br>
 > Time: (Tentative) 09:00-17:00 WEST (UTC+1) <br>
 > Location: TBD
-
-<!-- > The workshop will take place on July 4th  ??:00-??:00, at ??. -->
-<!-- > [Register now!](https://ih.acm.org/registration) -->
+> [Register now!](https://ih.acm.org/registration)
 
 ### Important Dates:
 
-<!-- * [x] **~~6/26/25~~ 7/3/25 AoE**: Submission Deadline -->
-
 - [x] **2/18/26 AoE**: [Call for Participation](/cfp/) Released
-- [ ] **4/17/26 AoE**: Submission Deadline
-- [ ] **5/6/26 AoE**: Decision Notification
-- [ ] **5/14/26 AoE**: Deadline for Camera-Ready Versions to be Included in Website and Zenodo
+- [ ] **5/17/26 AoE**: Submission Deadline (extended)
+- [ ] **5/27/26 AoE**: Decision Notification
+- [ ] **6/7/26 AoE**: Deadline for Camera-Ready Versions to be Included in Website and Zenodo
 - [ ] **7/5/26 WEST (UTC+1)**: Day of the Workshop
 
 ### News
