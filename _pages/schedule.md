@@ -13,8 +13,8 @@ Below is the proposed session plan and durations. Exact clock times will be post
 | Duration          | Activity                                                                                                              |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------- |
 | 30 minutes        | **Introductions** — welcome, workshop objectives, schedule, ice-breaker.                                              |
-| 60 minutes        | **Interactive Session 1** — Thematic exploration on Objective 1 (provocations, ideation).                             |
-| —                 | _Break & poster browsing (posters available physically and online)_                                                   |
+| 60 minutes        | **Interactive Session 1** — Thematic exploration on the Goals and Challenges                                          |
+| —                 | _Break_                                                                                                               |
 | 90 minutes        | **Author Presentations** — authors present their work.                                                                |
 | Lunch (self-paid) | Networking and mentor discussions with themed lunch outings                                                           |
 | 60 minutes        | **Keynote + Q&A** — 30-minute keynote and 30-minute Q&A / expert panel.                                               |
