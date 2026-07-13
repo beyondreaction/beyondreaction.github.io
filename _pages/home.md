@@ -23,14 +23,14 @@ As AI and sensing technologies increasingly shape everyday health tools, they of
 ### Logistics (high level)
 
 - Format: **One-day hybrid workshop** at [IH'26](https://ih.acm.org/) (in-person + Zoom for online participants).
-- Participation: poster submissions (≤4 pages, single-column ACM template, excluding references); at least one author of each accepted submission must [register](https://ih.acm.org/registration) and attend the workshop.
+- Participation: poster submissions (≤4 pages, single-column ACM template, excluding references); at least one author of each accepted submission must ~~[register](https://ih.acm.org/registration)~~ and attend the workshop.
 - **Poster Submissions are not Manditory for attending the workshop. However, registration is required for attending the workshop.**
 
 > Join our workshop @ [IH 2026](https://ih.acm.org/) in Porto, Portugal! <br>
 > When: July 5, 2026 <br>
 > Time: (Tentative) 09:00-17:00 WEST (UTC+1) <br>
 > Location: TBD
-> [Register now!](https://ih.acm.org/registration)
+> ~~[Register now!](https://ih.acm.org/registration)~~
 
 ### Important Dates:
 
@@ -38,7 +38,7 @@ As AI and sensing technologies increasingly shape everyday health tools, they of
 - [x] **5/17/26 AoE**: Submission Deadline (extended)
 - [x] **6/5/26 AoE**: Decision Notification
 - [x] **6/12/26 AoE**: Deadline for Camera-Ready Versions to be Included in Website and Zenodo
-- [ ] **7/5/26 WEST (UTC+1)**: Day of the Workshop
+- [x] **7/5/26 WEST (UTC+1)**: Day of the Workshop
 
 ### News
 
